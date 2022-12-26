@@ -1,0 +1,180 @@
+
+html {
+  background: url(images/mbk2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.top{
+  padding: 1% 0 0 0;
+}
+
+.down{
+  padding: 1% 0 0 0;
+}
+
+.inst1{
+  width: 10%;
+  display: inline-grid;
+  margin: 0 0 0 30%;
+}
+
+.inst2{
+    width: 10%;
+  display: inline-grid;
+    margin: 0 0 0 20%;
+}
+
+.inst3{
+      width: 10%;
+  display: inline-grid;
+    margin: 0 0 0 30%;
+}
+
+.inst4{
+  width: 10%;
+  display: inline-grid;
+    margin: 0 0 0 20%;
+}
+
+h1 {
+  color: #F40968;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  font-size: 4vw;
+}
+.neon {
+  animation-name: h1Ani;
+  animation-duration: 1s;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes h1Ani {
+  0% {
+    color: blue;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+.bad {
+  color: white;
+
+}
+
+
+.page:hover{
+  color: blue;
+  background-color: black;
+  animation-name: keyback;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes keyback {
+  0% {
+    color: pink;
+  }
+  50% {
+    color: green;
+
+  }
+}
+
+                /* PRESSED KEY NAME  */
+
+.change{
+  position: absolute;
+  font-size: 4rem;
+  padding-left: 22%;
+  padding-top: 3%;
+  color: yellow;
+  opacity: 0;
+}
+
+
+                /* INSTRUMENT KEYS  */
+
+.pressed {
+  animation-name: buttonAni;
+  animation-duration: 1s;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes buttonAni {
+  0% {
+    color: blue;
+    background-color: red;
+    transform: scale(1.1);
+  }
+
+  50% {
+    color: blue;
+  }
+
+  100% {
+    color: green;
+  }
+}
+
+.inst {
+
+  font-size: 15vw;
+  color: #FF6F6F;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-color: #DB97FF;
+  border-radius: 25%;
+  font-family: 'Tangerine', cursive;
+  opacity: 0.7;
+}
+
+.drum {
+  background-image: url("images/drumbig.png");
+
+}
+
+.dhol {
+  background-image: url("images/dhol2.png");
+}
+
+.plate {
+  background-image: url("images/stand-plate.png");
+
+}
+
+.kick {
+  background-image: url("images/kick1.png");
+}
+
+
+@media (max-width: 588px ){
+  .mess{
+    width: 250%;
+    height: 20vh;
+  }
+  .top{
+    padding: 20% 0 0 0;
+  }
+  .down{
+    padding: 20% 0 0 0;
+  }
+  .inst1{
+    margin: 0 10% 0 20%;
+  }
+
+  .inst3{
+    margin: 0 10% 0 20%;
+  }
+
+  h1{
+    margin: 15% 0 0 0;
+    font-size: 8vw;
+  }
+
+}
